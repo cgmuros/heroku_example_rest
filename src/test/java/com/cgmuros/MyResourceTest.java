@@ -8,7 +8,6 @@ import org.glassfish.jersey.test.JerseyTest;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import com.cgmuros.MyResource;
 
 public class MyResourceTest extends JerseyTest {
 
@@ -24,6 +23,6 @@ public class MyResourceTest extends JerseyTest {
     public void testGetIt() {
         final String responseMsg = target().path("myresource").request().get(String.class);
 
-        assertEquals("Hello, Heroku!", responseMsg);
+        assertEquals("Hello, Heroku! probandooooo", responseMsg);
     }
 }
